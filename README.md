@@ -66,5 +66,23 @@ Una vez modificado el fichero **index.html** , he comprobado el estado del proye
 ```bash
 git diff
 ```
+Cuando he recargado la página del servidor de **PHP** se han visto reflejados los cambios.
 
+![](images/index_modificado.png)
 
+Una vez visto reflejado el cambio he ejecutado un comando para restaurar el **index.html**
+
+```bash
+git restore index.html
+```
+
+![](images/index_restore.png)
+![](images/php_index.png)
+
+Para sobreescribir el **index.html** con la copia que teniamos guardada en **index.html.save** usaremos este comando con el parametro -f
+
+```bash
+git mv -f index.html.save index.html
+```
+
+![](images/index_mv.png)
