@@ -29,7 +29,6 @@ He creado un fichero **index.html** que contiene *"Hola mundo Aarón"*.
 
 ```bash
 echo "<H1>Hola mundo Aarón</H1>" > index.html
-
 ```
 Una vez creado el fichero, he comprobado el estado de git con *git status* y he agregado el **index.html** para subirlo a un commit y luego a la rama **main**.
 
@@ -38,7 +37,6 @@ git status
 git add index.html
 git commit -m "creacion del index"
 git push origin main
-
 ```
 ![](images/creacion_index.png)
 
@@ -47,7 +45,6 @@ El servidor que arrancamos en local coge por defecto el fichero **index.html** q
 
 ```bash
 php -S 0:8080
-
 ```
 
 Si accedemos desde el navegador al puerto donde hemos levantado el servidor veremos el contenido del **HTML interpretado**.
@@ -56,5 +53,18 @@ Si accedemos desde el navegador al puerto donde hemos levantado el servidor vere
 
 
 ## Comparar ficheros modificados
+
+He modificado el fichero **index.html** después de guardar una copia del mismo en un fichero llamado **index.html.save** y luego he modificado el original.
+
+```bash
+cat index.html > index.html.save
+echo "<H1>Adiós mundo Aarón</H1>" > index.html
+```
+
+Una vez modificado el fichero **index.html** , he comprobado el estado del proyecto local con *git status* y luego he comparado los la modificación del fichero **index.html**.
+
+```bash
+git diff
+```
 
 
