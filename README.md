@@ -101,4 +101,51 @@ php -S 0:8080
 ## Git log
 Así se muestran los logs de git.
 
+```bash
+cd ruta_del_proyecto
+git log
+```
+![](images/log.png)
 
+Para mostrar los últimos **X** logs hay que poner el siguiente comando donde **X** es el número de commits anteriores que quieres ver.
+
+```bash
+git log -x
+```
+
+![](images/log_3.png)
+
+Para mostrarlo en forma **pretty** hay que poner el parámetro --pretty despues del comando.
+
+```bash
+git log --pretty
+```
+![](images/log_pretty.png)
+
+Para mostrar las **diferencias** de los dos últimos commit con respecto antes de subirlos (x es el número de commits que quieres ver).
+
+```bash
+git log -p -x
+```
+
+![](images/log_p_2.png)
+
+Para ver los commits del último día.
+
+```bash
+git log --since="1 day ago"
+```
+
+# Creación de ramas
+
+He creado la rama *Vers1* y me he posicionado sobre ella
+
+```bash
+git branch
+git branch Vers1
+git checkout Vers1
+```
+
+![](images/rama.png)
+![](images/nueva_rama.png)
+![](images/cambio_rama.png)
