@@ -86,3 +86,19 @@ git mv -f index.html.save index.html
 ```
 
 ![](images/index_mv.png)
+
+He modificado el index.html desde la página de Github y luego he hecho un pull de la rama.
+
+![](images/index_github.png)
+
+```bash
+git pull origin main
+php -S 0:8080
+```
+
+![](images/php_github.png)
+
+## Git log
+Así se muestran los logs de git.
+
+
